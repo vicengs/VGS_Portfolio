@@ -3,18 +3,91 @@
 <!-- File     : index.html     -->
 <!-- Author   : Vicente Garcia -->
 <!-- Date     : 02/14/2022     -->
-<!-- Modified : 02/14/2022     -->
+<!-- Modified : 02/16/2022     -->
 <!-- ------------------------- -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Link to external CSS -->
         <link rel="stylesheet" href="./assets/css/style.css"/>
         <!-- Name in the tab -->
         <title>Vicente Garcia - Portfolio</title>
     </head>
     <body>
-        
+        <!-- Navigation -->
+        <header>
+            <!-- Go on Click to Topmost Directory-->
+            <h1><a href="#">VICENTE GARCIA SEPULVEDA</a></h1>
+            <!-- Accesibility & Navigation Links -->
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                    <li><a href="./resume_VGS.html">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Jumbotron/Hero -->
+        <section class="hero">
+            <div class="hero-form">
+                <h3>Full Stack Developer</h3>
+            </div>
+        </section>
+        <!-- About Me -->
+        <section id="about-me" class="flex-container">
+            <div class="flex-title">
+                <h2>About<br>Me</h2>
+            </div>
+            <div class="flex-photo">
+                <img src="./assets/images/Vicente.jpg" alt="Vicente Garcia Sepulveda">
+            </div>
+            <div class="flex-info">
+                <p>I am currently doing volunteer an institution called Manos de Cristo like a Computer teacher online and developing a basic computer curriculum for digital devices.</p>
+                <br>
+                <p>
+                    I have worked for IBM for 1 year as an Application Consultant and then 2 years as a Project Manager.
+                    Before I worked for Mapfre Insurance for 14 years as a Developer, Analyst and then as Project Leader.
+                </p>
+                <br>
+                <p>Also, I have a bachelor’s degree in IT and a master’s degree in IT Management.</p>
+            </div>
+        </section>
+        <section id="work" class="flex-container">
+            <div class="flex-title flex-title2">
+                <h2>Work</h2>
+            </div>
+            <div class="flex-project">
+                <a href="https://github.com/vicengs"></a><img src="./assets/images/run-buddy.jpg" alt="Run Buddy Project"></a>
+            </div>
+            <div class="flex-projects">
+                <img src="./assets/images/horiseon.jpg" alt="Horiseon Project">
+            </div>
+            <div class="flex-projects">
+                <img src="./assets/images/run-buddy.jpg" alt="Horiseon Project">
+            </div>
+        </section>
+        <section id="contact-me" class="flex-container">
+            <div class="flex-title flex-title3">
+                <h2>Contact<br>Me</h2>
+            </div>
+            <div class="flex-contact">
+                <p>Telephone: 512-549-1892</p>
+                <p>Email: <a href="mailto:vicen1@gmail.com">vicen1@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/vicengs">github.com/vicengs</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/vicentegarciasepulveda">linkedin.com/in/vicentegarciasepulveda</a></p>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <h2>Made by Vicente.</h2>
+            <div>
+                <!-- Add privacy policy & copyright -->
+                <a href="./resume_VGS.html">Vicente's Resume</a>
+                <br/>
+                <p>&copy; 2022 Vicente Garcia Sepulveda.</p>
+            </div>
+        </footer>
     </body>
 </html>
