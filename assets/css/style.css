@@ -3,16 +3,16 @@
 /* File     : style.css      */
 /* Author   : Vicente Garcia */
 /* Date     : 02/14/2022     */
-/* Modified : 02/16/2022     */
+/* Modified : 02/18/2022     */
 /* ------------------------- */
 /* Variables */
 :root{
-    --primary-color: #ffffff;
-    --secondary-color: #000000e6;
-    --tertiary-color: #ff7214;
+    --clear-color: #ffffff;
+    --dark-color: #000000e6;
+    --extra-color: #ffc014;
 }
+/* Apply style whole page */
 *{
-    /* Apply margin to whole page */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,377 +21,54 @@
     /* Add wrap to move other line when resizes */
     flex-wrap: wrap;
 }
+/* Apply font and color background to body */
 body{
-    /* Apply font and color background to body */
     font-family: Helvetica, Arial, sans-serif;
-    background-color: var(--primary-color);
 }
+/* Apply style to header */
 header{
-    /* Apply space and background color to header */
     padding: 17px 35px;
     /* Add flexbox */
     display: flex;
-    /* Add sticky for Safari */
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    /* Apply color and position to header */
-    background-color: var(--primary-color);
-    background-position: 80%; /*center;*/
-    background-size: cover;
-    /* Fix scrolling checkbox and radio */
-    z-index: 9999;
+    background-color: var(--clear-color);
 }
+/* Apply color and alignment to h1 in header */
 header h1{
-    /* Apply color and alignment to h1 in header */
-    color: var(--secondary-color);
+    color: var(--dark-color);
+    margin: 0;
 }
+/* Apply shape and color to anchors */
 header a{
-    /* Apply shape and color to anchors */
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--dark-color);
 }
+/* Apply margin to navigation */
 header nav{
-    /* Apply margin to navigation */
     margin: 7px 0;
 }
+/* Apply style to list */
 header nav ul{
-    /* Style to list */
+    /* Add flexbox */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
 }
+/* Apply space and style font to navigation's elements */
 header nav ul li a{
-    /* Apply space and style font to navigation's elements */
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
 }
-/* Add pseudo-class */
+/* Add pseudo-class change when cursor on element */
 header nav ul li a:hover{
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    background: var(--dark-color);
+    color: var(--clear-color);
 }
-section{
-    /* Apply padding to sections */
-    padding: 20px;
-}
-.hero{
-    height: 800px;
-    margin-bottom: 25px;
-    /* Add background image to hero */
-    background-image: url("../images/Banner_Hero_VGS.jpg");
-    background-position: 70%;
-    background-size: cover;
-    /* Add flexbox */
-    display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
-    /* Mobile */
-    align-items: flex-start;
-}
-.hero-form{
-    /* Add style to form */
-    color: var(--primary-color);
-    /* Change background to color transparency */
-    background-color: rgba(255, 255, 255, 0.08);
-    padding: 20px ;
-    /* Add style to margin */
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--primary-color);
-    /* Add width and margin to flexbox */
-    margin: 4.15%;
-    /* Add shadow transparency */
-    box-shadow: 6px 5px 4px rgba(255, 255, 255, 0.3);
-    align-content: center;
-}
-.hero-form h3{
-    /* Add style to title in form */
-    font-size: 28px;
-    margin: 0;
-}
-/*.section-title{
-    /* Add style to h2 in all sections -/
-    font-size: 48px;
-    color: var(--secondary-color);
-    /*margin-bottom: 35px;*/ /* Remove to replace with flexbox -/
-    /*padding: 0 100px 20px 100px;*/ /* Remove to replace with flexbox -/
-    border-right: 3px solid var(--secondary-color);
-    padding-right: 10px;
-    /*display: inline-block;*/ /* Remove to replace with flexbox -/
-    /* Add declarations to flexbox -/
-    padding-bottom: 30px;
-    text-align: left;
-    margin: 0 auto 35px auto;
-    width: 100%;
-}*/
-section .flex-title .flex-title2{
-    padding: 0;
-}
-.flex-container{
-    /* Add alignment to section what we do */
-    display: flex;
-    flex-wrap: wrap;
-}
-/* Add style to class flex-row */
-.flex-title{
-    font-size: 26px;
-    text-align: end;
-    border-right: 3px solid var(--secondary-color);
-    padding: 20px 20px 10px 50px;
-    flex: -1;
-}
-.flex-photo{
-    flex: 5%;
-    padding: 10px 10px 10px 30px;
-}
-.flex-photo img{
-    width: 100%;
-    border: 5px solid var(--secondary-color);
-    box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.3);
-}
-.flex-title2{
-    padding-left: 66px;
-}
-.flex-title3{
-    padding-left: 18px;
-}
-/* Add class step-info to flexbox */
-.flex-info{
-    /*display: flex;*/
-    font-size: 20px;
-    flex: 75%;
-    padding: 30px 30px 10px 10px;
-    /*flex-wrap: wrap;*/
-    /*align-items: right;*/
-    /*padding-right: 50px;*/
-    /*padding-left: 20px;*/
-}
-.flex-project{
-    flex: 30%;
-    padding: 10px 10px 10px 30px;
-}
-.flex-projects{
-    flex: 50%;
-    padding: 10px 10px 10px 30px;
-    flex-wrap: wrap;
-}
-.flex-contact{
-    font-size: 20px;
-    flex: 1;
-    padding: 15px 10px 10px 30px;
-}
-.flex-project img{
-    width: 105%;
-    border: 5px solid var(--secondary-color);
-    box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.3);
-}
-.steps{
-    /* Add alignment and background color to section what you do */
-    /*text-align: center;*/ /* Remove to replace with flexbox */
-    background: var(--primary-color);
-}
-/* Add class step to flexbox */
-.step{
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    /*border-bottom: 1px solid #39a6b2;*/ /* Delete to use last child pseudo class */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.step:not(:last-child){
-    border-bottom: 1px solid var(--tertiary-color);
-}
-/* Rename selector from steps to step */
-.step h3{
-    /* Add style to title */
-    color: var(--secondary-color);
-    font-size: 46px;
-    /*margin-top: 10px;*/ /* Remove to replace with flexbox */
-    /* Add style to flexbox */
-    flex: 1 30%;
-}
-
-/* Add class step-img to flexbox */
-.step-img{
-    flex: 1 12%;
-    margin-right: 20px;
-}
-/* Add class step-img to img in flexbox */
-.step-img img{
-    max-width: 100%;
-}
-/* Add class step-text to flexbox */
-.step-text{
-    flex: 12;
-}
-/* Change class from steps to step-text  */
-.step-text p {
-    /* Add color and size to paragraph */
-    color: var(--tertiary-color);
-    font-size: 18px; /*23px;*/
-}
-.step-text h4{
-    font-size: 26px;
-    line-height: 1.5;
-    color: var(--secondary-color);
-}
-/* Delete rule to apply flexbox instead of box content */
-/*.steps span{
-    /* Add size to font to next text in title -/
-    font-size: 38px;
-}*/
-.trainers{
-    /* Add alignment to section trainers */
-    /*text-align: center;*/ /* Remove to replace with flexbox */
-    /* Add flexbox style */
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.trainer{
-    /* Add style to each trainer */
-    /*width: 900px;*/ /* Remove to replace with flexbox */
-    margin: 20px; /*0 auto 30px auto;*/
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    /*overflow: auto;*/ /* Remove to replace with flexbox */
-    flex: 1;
-}
-.trainer img{
-    /* Add style to trainer's image */
-    width: 100%; /*35%;*/
-    /*float: left;*/ /* Remove to replace with flexbox */
-    
-}
-.trainer-bio{
-    /* Add margins to trainer's bio */
-    padding: 25px; /*35px;*/
-    /*float: left;*/ /* Remove to replace with flexbox */
-    /*width: 65%;*/ /* Remove to replace with flexbox */
-    line-height: 1.3;
-}
-.trainer-bio h3{
-    /* Add format to trainer's name */
-    font-size: 28px; /*32px;*/
-    /*margin-bottom: 8px;*/ /* Remove to replace with flexbox */
-}
-.trainer-bio h4{
-    /* Add format to trainer's strength */
-    font-weight: lighter;
-    font-size: 22px; /*26px;*/
-    margin-bottom: 15px; /*25px;*/
-}
-.trainer-bio p{
-    /* Add format to trainer's info */
-    font-size: 17px;
-}
-.text-left{
-    /* Alignment to left */
-    text-align: left;
-}
-.text-right{
-    /* Alignment to right */
-    text-align: right;
-}
-
-.contact{
-    /* Alignment contact section */
-    /*text-align: center;*/ /* Remove to replace with flexbox */
-    background: var(--secondary-color);
-}
-/* Add flexbox to contact info */
-.contact-info{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-/* Add flexbox to contact info>* */
-.contact-info > *{
-    flex: 1;
-    margin: 15px;
-}
-.contact h2{
-    /* Add color to contact title */
-    color: var(--primary-color);
-}
-.contact-info iframe{
-    /* Size map */
-    /*width: 400px;*/ /* Remove to replace with flexbox */
-    height: 400px;
-}
-.contact-info div{
-    /* Add style to contact */
-    /*width: 410px;*/ /* Remove to replace with flexbox */
-    /*display: inline-block;*/ /* Remove to replace with flexbox */
-    /*vertical-align: top;*/ /* Remove to replace with flexbox */
-    /*text-align: left;*/ /* Remove to replace with flexbox */
-    /*margin: 30px 0 0 60px;*/ /* Remove to replace with flexbox */
-    color: white;
-}
-.contact-info h3{
-    /* Add font and color to title */
-    color: var(--primary-color);
-    font-size: 32px;
-}
-.contact-info p, .contact-info address{
-    /* Add style to paragraph and contact info */
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 16px; /*20px;*/
-    font-style: normal;
-}
-.contact-info a{
-    /* Color to email */
-    color: var(--primary-color);
-}
-/* Add rule to contact in flexbox */
-.contact-form input, .contact-form textarea{
-    border: 1px solid var(--secondary-color);
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: var(--secondary-color);
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    /* Add rounded corners and transparent area */
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.75);
-}
-/* Add rule for focus state */
-.contact-form input:focus, .contact-form textarea:focus{
-    background-color: rgba(255, 255, 255, 1);
-    outline: none;
-}
-/* Add rule to contact button in flexbox */
-.contact-form button{
-    width: 100%;
-    border: none;
-    background:var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-    /* Add rounded corners */
-    border-radius: 10px;
-}
-/* Add pseudo-class */
-.contact-form button:hover{
-    color: var(--primary-color);
-    background: var(--tertiary-color);
-}
+/* Apply style to footer */
 footer{
-    /* Apply background color and alignment to footer */
-    background: var(--secondary-color);
+    background: var(--dark-color);
     width: 100%;
     padding: 40px 35px;
     /* Add flexbox */
@@ -399,20 +76,165 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+/* Apply style to h2 element in footer */
 footer h2{
-    /* Apply color and font size to h2 element in footer */
-    color: var(--primary-color);
+    color: var(--clear-color);
     font-size: 30px;
+    margin: 0;
 }
+/* Add alignment to container div in footer */
 footer div{
-    /* Add alignment to container  div in footer */
-    /*float: right;*/ /* Remove to replace with flexbox */
     line-height: 1.5;
     text-align: right;
 }
+/* Apply color to anchors in footer */
 footer a, footer p{
-    /* Apply color to anchors in footer */
-    color: var(--primary-color);
+    color: var(--clear-color);
+}
+/* Apply padding to sections */
+section{
+    padding: 60px;
+}
+/* Apply style to hero */
+.hero{
+    height: 300px;
+    margin-bottom: 25px;
+    /* Add background image to hero */
+    background-image: url("../images/hero_VGS.jpg");
+    background-position: 80%;
+    /* Add flexbox */
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    /* Mobile */
+    align-items: flex-start;
+}
+.hero-title{
+    margin-top: 30px;
+    margin-right: 10px;
+}
+/* Add style to title in hero */
+.hero h3{
+    color: var(--clear-color);
+    /* Change background to color transparency */
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 10px ;
+    /* Add style to margin */
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--clear-color);
+    width: 300px;
+    /* Add shadow transparency */
+    box-shadow: 6px 5px 4px rgba(255, 255, 255, 0.3);
+    font-size: 28px;
+    margin: 0;
+}
+/* Add style containers sections*/
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 5px 10px 5px;
+}
+/* Add style about me section */
+.flex-title{
+    font-size: 26px;
+    text-align: end;
+    border-right: 3px solid var(--dark-color);
+    padding: 20px 20px 20px 50px;
+}
+.flex-photo{
+    padding: 15px 0px 10px 20px;
+    width: 155px;
+}
+.flex-photo img{
+    width: 118px;
+    border: 3px solid var(--dark-color);
+    box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.3);
+}
+.flex-info{
+    font-size: 20px;
+    flex: 1;
+    padding: 25px 10px;
+}
+/* Add style work section */
+.flex-title2{
+    padding-left: 66px;
+}
+/* Add class step-info to flexbox */
+.flex-main-project{
+    flex: 1;
+    padding: 10px 10px 10px 20px;
+}
+.flex-main-project img{
+    width: 100%;
+    border: 3px solid var(--dark-color);
+    box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+.flex-main-project img:hover{
+    opacity: 1;
+    box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.6);
+}
+.flex-projects-up{
+    padding: 10px 0 10px 0;
+    flex-wrap: wrap;
+    display: flex;
+}
+.flex-projects-up a{
+    flex: 1;
+}
+.flex-projects-up img, .flex-projects-down img{
+    width: 599px;
+    height: 280px;
+}
+.flex-projects-up-right{
+    padding-left: 15px;
+}
+.flex-projects-down{
+    padding-top: 0px;
+    flex-wrap: wrap;
+    display: flex;
+}
+/* Add style contact me section */
+.flex-title3{
+    padding-left: 18px;
+}
+.flex-contact{
+    font-size: 20px;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 15px 10px 10px 30px;
+    flex-direction: row;
+}
+/* Add rule for focus state */
+.contact-form input:focus, .contact-form textarea:focus{
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+/* Add pseudo-class */
+.contact-form button:hover{
+    color: var(--clear-color);
+    background: var(--extra-color);
+}
+.flex-resume{
+    text-align: center;
+    font-size: large;
+    padding: 45px;
+    background-color: var(--extra-color);
+}
+.flex-under{
+    /* Add flexbox */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    /* Mobile */
+    align-items: flex-start;
+}
+.flex-under img{
+    flex: 1;
+    /*height: 669px;*/
+    width: 100%;
 }
 /* Media Query for smaller desktop screens and smaller */
 @media screen and (max-width: 980px){
@@ -438,20 +260,8 @@ footer a, footer p{
         text-align: center;
         width: 100%;
     }
-    .hero-cta, .hero-form{
-        width: 100%;
-    }
-    .hero-cta{
-        text-align: center;
-    }
     .section-title{
         width: 80%;
-    }
-    .trainer{
-        flex: 0 70%;
-    }
-    .contact-info iframe{
-        flex: 1 100%;
     }
 }
 /* Media Query for tablets and smaller */
@@ -459,46 +269,13 @@ footer a, footer p{
     section{
         padding: 30px 15px;
     }
-    .step h3{
-        flex: 1 100%;
-        text-align: center;
-    }
-    .step-info{
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
-    }
-    .step-img{
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    .step-text{
-        flex: 100%;
-    }
 }
 /* Media Query for mobile phones and smaller */
 @media screen and (max-width: 575px) {
-    .hero-form button{
-        width: 100%;
-    }
     .section-title{
         width: 95%;
     }
     .intro p{
         width: 100%;
-    }
-    .trainer{
-        flex: 0 100%;
-    }
-    .contact-info{
-        text-align: center;
-    }
-    .contact-info > *{
-        flex: 0 100%;
-    }
-    .contact-form{
-        order: 3;
     }
 }
