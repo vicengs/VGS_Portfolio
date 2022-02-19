@@ -109,6 +109,7 @@ section{
     /* Mobile */
     align-items: flex-start;
 }
+/* Add margin and position to Full Stack Developer */
 .hero-title{
     margin-top: 30px;
     margin-right: 10px;
@@ -160,7 +161,6 @@ section{
 .flex-title2{
     padding-left: 66px;
 }
-/* Add class step-info to flexbox */
 .flex-main-project{
     flex: 1;
     padding: 10px 10px 10px 20px;
@@ -183,17 +183,20 @@ section{
 .flex-projects-up a{
     flex: 1;
 }
-.flex-projects-up img, .flex-projects-down img{
-    width: 599px;
+.flex-projects-up img{
+    width: 100%;
     height: 280px;
 }
 .flex-projects-up-right{
-    padding-left: 15px;
+    padding-left: 12px;
 }
 .flex-projects-down{
     padding-top: 0px;
     flex-wrap: wrap;
     display: flex;
+}
+.flex-projects-down img{
+    width: 49.59%;
 }
 /* Add style contact me section */
 .flex-title3{
@@ -205,16 +208,6 @@ section{
     flex-wrap: wrap;
     padding: 15px 10px 10px 30px;
     flex-direction: row;
-}
-/* Add rule for focus state */
-.contact-form input:focus, .contact-form textarea:focus{
-    background-color: rgba(255, 255, 255, 1);
-    outline: none;
-}
-/* Add pseudo-class */
-.contact-form button:hover{
-    color: var(--clear-color);
-    background: var(--extra-color);
 }
 .flex-resume{
     text-align: center;
@@ -232,7 +225,7 @@ section{
     align-items: flex-start;
 }
 .flex-under img{
-    flex: 1;
+    flex: 50%;
     /*height: 669px;*/
     width: 100%;
 }
