@@ -101,7 +101,7 @@ section{
     margin-bottom: 25px;
     /* Add background image to hero */
     background-image: url("../images/hero_VGS.jpg");
-    background-position: 80%;
+    background-position: 100%;
     /* Add flexbox */
     display: flex;
     justify-content: end;
@@ -111,8 +111,8 @@ section{
 }
 /* Add margin and position to Full Stack Developer */
 .hero-title{
-    margin-top: 30px;
-    margin-right: 10px;
+    margin-top: 20px;
+    margin-right: 18%;
 }
 /* Add style to title in hero */
 .hero h3{

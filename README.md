@@ -1,3 +1,45 @@
+# Portfolio
+
+## Purpose
+A website that shows my proferssional work
+
+## Built with
+* HTML
+* CSS (Advanced)
+
+## Website
+https://vicengs.github.io/VGS_Portfolio/
+
+## Contribution
+Made by Vicente Garcia Sepulveda
+
+# Description
+
+Page made from scratch with my professional information
+
+* Functionality using classes
+* Organize with Flexbox
+* Responsive using Media queries
+* Performance using variables
+* Comments of the code
+
+# Instructions (Solved)
+## SSH to clone:
+```
+git@github.com:vicengs/VGS_Portfolio.git
+```
+## GitHub repository:
+```
+https://github.com/vicengs/VGS_Portfolio
+```
+## Live URL:
+```
+https://vicengs.github.io/VGS_Portfolio/
+```
+## Screenshoots
+
+![image text](https://github.com/vicengs/VGS_Portfolio/blob/main/assets/images/coming_soon.jpg)
+
 # 02 Advanced CSS: Portfolio
 
 Welcome to this week's Challenge! This is an even-numbered week, so you won't be given any starter code. Instead, you'll create a web application from scratch! This week, you'll build a portfolio page, which you can add to as the course progresses. 
