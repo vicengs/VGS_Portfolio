@@ -38,7 +38,15 @@ https://vicengs.github.io/VGS_Portfolio/
 ```
 ## Screenshoots
 
-![image text](https://github.com/vicengs/VGS_Portfolio/blob/main/assets/images/coming_soon.jpg)
+![image text](https://github.com/vicengs/VGS_Portfolio/blob/main/assets/images/Screenshot_VGS_1.jpg)
+
+![image text](https://github.com/vicengs/VGS_Portfolio/blob/main/assets/images/Screenshot_VGS_2.jpg)
+
+![image text](https://github.com/vicengs/VGS_Portfolio/blob/main/assets/images/Screenshot_VGS_3.jpg)
+
+![image text](https://github.com/vicengs/VGS_Portfolio/blob/main/assets/images/Screenshot_VGS_4.jpg)
+
+![image text](https://github.com/vicengs/VGS_Portfolio/blob/main/assets/images/Screenshot_VGS_5.jpg)
 
 # 02 Advanced CSS: Portfolio
 
