@@ -3,7 +3,7 @@
 /* File     : style.css      */
 /* Author   : Vicente Garcia */
 /* Date     : 02/14/2022     */
-/* Modified : 02/18/2022     */
+/* Modified : 02/19/2022     */
 /* ------------------------- */
 /* Variables */
 :root{
@@ -132,6 +132,7 @@ section{
 }
 /* Add style containers sections*/
 .flex-container{
+    /* Add flexbox */
     display: flex;
     flex-wrap: wrap;
     padding: 10px 5px 10px 5px;
@@ -178,6 +179,7 @@ section{
 .flex-projects-up{
     padding: 10px 0 10px 0;
     flex-wrap: wrap;
+    /* Add flexbox */
     display: flex;
 }
 .flex-projects-up a{
@@ -185,7 +187,7 @@ section{
 }
 .flex-projects-up img{
     width: 100%;
-    height: 280px;
+    height: 380px;
 }
 .flex-projects-up-right{
     padding-left: 12px;
@@ -193,6 +195,7 @@ section{
 .flex-projects-down{
     padding-top: 0px;
     flex-wrap: wrap;
+    /* Add flexbox */
     display: flex;
 }
 .flex-projects-down img{
@@ -253,8 +256,8 @@ section{
         text-align: center;
         width: 100%;
     }
-    .section-title{
-        width: 80%;
+    .flex-projects-up img{
+        height: 150px;
     }
 }
 /* Media Query for tablets and smaller */
@@ -262,13 +265,13 @@ section{
     section{
         padding: 30px 15px;
     }
+    .flex-projects-up img{
+        height: 120px;
+    }
 }
 /* Media Query for mobile phones and smaller */
 @media screen and (max-width: 575px) {
-    .section-title{
-        width: 95%;
-    }
-    .intro p{
-        width: 100%;
+    .flex-projects-up img{
+        height: 90px;
     }
 }
